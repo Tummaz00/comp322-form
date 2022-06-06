@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 4</title>
+    <script type = "text/javascript" src = "validation.js"></script>
+    <style>
+        radio{
+            display: inline-block;
+        }
+        button{
+            display:inline-block;
+        }
+    </style>
+</head>
+<body>
+    <form name = "theForm">
+        Username:
+        <input type = "text" name = "userName">
+        <br><br>
+
+        Email:
+        <input type = "text" name = "Email">
+        <br><br>
+
+        Phone Number:
+        <input type = "text" name = "phoneNum">
+        <br><br>
+
+        Enter Password:
+        <input type = "password" name = "enterPass">
+        <br><br>
+
+        Confirm Password:
+        <input type = "password"  name = "confirmPass">
+        <br><br>
+
+        Gender:
+        <input type = "radio" id = "female" name = "gender" value = "1">
+        <label for = "female">Female</label>
+        <input type = "radio" id = "male" name = "gender" value = "2">
+        <label for = "male">Male</label>
+        <input type = "radio" id = "other" name = "gender" value = "3">
+        <label for = "female">Other</label><br><br>
+
+        <label for = "ageGroup">Age Group:</label>
+        <select name = "AgeGroup" id = "ageGroup">
+            <option value = ""></option>
+            <option value = "<21">< 21 years old</option>
+            <option value = "21-25">21 - 25 years old</option>
+            <option value = "26-35">26 - 35 years old</option>
+            <option value = "36-50">36 - 50 years old</option>
+            <option value = "<50">< 50 years old</option>
+        </select>
+        <br><br>
+
+        Music Genre:
+        <input type = "checkbox" id = "pop" name = "Pop" value = "Pop">
+        <label for = "pop">Pop</label>
+        <input type = "checkbox" id = "Hiphop" name = "Hiphop" value = "Hiphop">
+        <label for = "Hiphop">Hip Hop</label>
+        <input type = "checkbox" id = "jazz" name = "Jazz" value = "Jazz">
+        <label for = "jazz">Jazz</label>
+        <input type = "checkbox" id = "rock" name = "rock" value = "rock">
+        <label for = "rock">Rock</label>
+        <input type = "checkbox" id = "classMus" name = "classMus" value = "classMus">
+        <label for = "classMus">Classic Musical</label>
+        <input type = "checkbox" id = "country" name = "country" value = "country">
+        <label for = "country">Country</label><br><br>
+
+        <input type ="button" value = "Submit" onclick = "validate()">
+        <button type = "reset" id = clearButton onclick="clearWarnings()add">Clear</button>
+        <br>
+
+        <div id = "theDiv"></div>
+    </form>
+
+
+
+</body>
+</html>
